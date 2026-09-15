@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Diaspora Channels - Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+ <link rel="icon" href="../img/favicon.ico" type="image/png">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        adcRed: '#e11d48', 
+                        adcDark: '#0a0a0a', 
+                        adcCard: '#141414', 
+                        adcBorder: '#262626',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-adcDark text-white font-sans antialiased min-h-screen flex flex-col overflow-x-hidden">
+
+    <!-- Top Navigation Bar -->
+    <header class="bg-black/80 backdrop-blur-md sticky top-0 z-50 border-b border-adcBorder">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+           <!-- Logo Area -->
+<div class="flex items-center gap-3">
+    <!-- Replace 'path/to/your-logo.png' with the actual path to your image -->
+    <img src="../img/logo.png" alt="African Diaspora Channels Logo" class="h-12 w-auto object-contain">
+    
+    <!-- You can keep the text if your logo doesn't include the text, or delete this div if your logo image already has the text built-in -->
+    <div class="flex flex-col text-[11px] leading-tight font-bold tracking-wider">
+        <span>AFRICAN</span>
+        <span>DIASPORA</span>
+        <span>CHANNELS</span>
+    </div>
+</div>
+            <!-- Main Navigation -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#" class="text-white relative pb-1">
+                    Home
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-white"></span>
+                </a>
+                <a href="#" class="flex items-center gap-1.5 hover:text-white transition-colors">
+                    <span class="w-2 h-2 rounded-full bg-adcRed"></span> Live TV
+                    <span class="bg-adcRed text-white text-[10px] px-1.5 py-0.5 rounded font-bold ml-1">LIVE</span>
+                </a>
+                <a href="#" class="hover:text-white transition-colors">Movies</a>
+                <a href="#" class="hover:text-white transition-colors">TV shows</a>
+                <a href="#" class="hover:text-white transition-colors">Sports</a>
+            </nav>
+
+            <!-- Right Icons -->
+            <div class="flex items-center gap-5 text-gray-300">
+                <button class="hover:text-white transition-colors"><i class="fa-solid fa-magnifying-glass text-lg"></i></button>
+                <button class="relative hover:text-white transition-colors">
+                    <i class="fa-regular fa-bell text-lg"></i>
+                    <span class="absolute -top-1 -right-1 bg-adcRed text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">1</span>
+                </button>
+                <button class="hover:text-white transition-colors"><i class="fa-regular fa-user text-lg"></i></button>
+                <button class="hover:text-white transition-colors"><i class="fa-solid fa-gear text-lg"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow w-full mx-auto">
+        
+        <!-- HERO CAROUSEL SECTION -->
+        <section id="hero-carousel" class="relative w-full h-[70vh] min-h-[500px] border-b border-adcBorder">
+            <!-- Carousel Slides Container -->
+            <div class="relative w-full h-full overflow-hidden">
+                
+                <!-- Slide 1 (Active) -->
+                <div class="carousel-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-100 z-10">
+                    <!-- Background Image with Gradient Overlay -->
+                    <div class="absolute inset-0">
+                        <img src="https://placehold.co/1920x1080/1a1a1a/333333?text=Morning+Brew+Hero+Image" alt="The Morning Brew" class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-r from-adcDark via-adcDark/80 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-adcDark via-transparent to-transparent"></div>
+                    </div>
+
+                    <!-- Slide Content -->
+                    <div class="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center pb-20">
+                        
+                        <!-- Tags -->
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-adcRed text-white text-xs font-bold px-2 py-1 rounded">ADC STREAM</span>
+                            <span class="flex items-center gap-1 text-xs font-semibold text-gray-300 uppercase tracking-wider">
+                                <i class="fa-solid fa-tower-broadcast text-adcRed"></i> ADC ORIGINAL
+                            </span>
+                            <span class="text-green-500 text-xs font-bold">98% Match</span>
+                        </div>
+
+                        <!-- Title -->
+                        <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4 max-w-2xl">
+                            The Morning Brew with Coco and Mimi
+                        </h1>
+
+                        <!-- Meta Data -->
+                        <div class="flex items-center text-sm font-medium text-gray-300 gap-3 mb-4">
+                            <span>2026</span>
+                            <span class="w-1 h-1 rounded-full bg-gray-500"></span>
+                            <span>1h 05m</span>
+                            <span class="w-1 h-1 rounded-full bg-gray-500"></span>
+                            <span>13+</span>
+                            <span class="border border-gray-500 px-1 text-[10px]">4K UHD</span>
+                            <span class="border border-gray-500 px-1 text-[10px]">HDR</span>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="text-gray-300 text-sm md:text-base max-w-2xl mb-8 line-clamp-3">
+                            Start your morning with Coco and Mimi on African Diaspora Channels! Breaking down the most talked-about trending headlines, viral diaspora moments, entertainment news, and empowering conversations connecting Africa to the...
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="flex flex-wrap items-center gap-4">
+                            <button class="bg-white text-black font-bold px-8 py-3 rounded flex items-center gap-2 hover:bg-gray-200 transition-colors">
+                                <i class="fa-solid fa-play"></i> Watch on ADC
+                            </button>
+                            <button class="bg-gray-600/50 hover:bg-gray-600/70 backdrop-blur-sm border border-gray-500 text-white font-semibold px-6 py-3 rounded flex items-center gap-2 transition-colors">
+                                <i class="fa-solid fa-plus"></i> Watchlist
+                            </button>
+                            <button class="bg-gray-600/50 hover:bg-gray-600/70 backdrop-blur-sm border border-gray-500 text-white font-semibold px-6 py-3 rounded flex items-center gap-2 transition-colors">
+                                <i class="fa-solid fa-circle-info"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 (Hidden initially) -->
+                <div class="carousel-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none">
+                    <div class="absolute inset-0">
+                        <img src="https://placehold.co/1920x1080/0a1a2b/334455?text=Lifestyle+with+Coco+Hero" alt="Lifestyle with Coco" class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-r from-adcDark via-adcDark/80 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-adcDark via-transparent to-transparent"></div>
+                    </div>
+                    <div class="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center pb-20">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-adcRed text-white text-xs font-bold px-2 py-1 rounded">ADC STREAM</span>
+                            <span class="flex items-center gap-1 text-xs font-semibold text-gray-300 uppercase tracking-wider"><i class="fa-solid fa-tower-broadcast text-adcRed"></i> ADC ORIGINAL</span>
+                            <span class="text-green-500 text-xs font-bold">95% Match</span>
+                        </div>
+                        <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4 max-w-2xl">
+                            Lifestyle with Coco
+                        </h1>
+                        <div class="flex items-center text-sm font-medium text-gray-300 gap-3 mb-4">
+                            <span>2026</span><span class="w-1 h-1 rounded-full bg-gray-500"></span>
+                            <span>45m</span><span class="w-1 h-1 rounded-full bg-gray-500"></span>
+                            <span>13+</span>
+                        </div>
+                        <p class="text-gray-300 text-sm md:text-base max-w-2xl mb-8 line-clamp-3">
+                            Join Coco as she explores the vibrant lifestyle, fashion, and culture of the African Diaspora. From luxury living to everyday textures, get inspired.
+                        </p>
+                        <div class="flex flex-wrap items-center gap-4">
+                            <button class="bg-white text-black font-bold px-8 py-3 rounded flex items-center gap-2 hover:bg-gray-200 transition-colors"><i class="fa-solid fa-play"></i> Watch on ADC</button>
+                            <button class="bg-gray-600/50 border border-gray-500 text-white font-semibold px-6 py-3 rounded flex items-center gap-2"><i class="fa-solid fa-plus"></i> Watchlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls (Overlay) -->
+            <button id="prevBtn" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/40 hover:bg-black/80 border border-gray-600 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-chevron-left text-sm"></i>
+            </button>
+            <button id="nextBtn" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/40 hover:bg-black/80 border border-gray-600 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-chevron-right text-sm"></i>
+            </button>
+
+            <!-- Slide Indicators -->
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
+                <button class="carousel-indicator w-6 h-1.5 rounded-full bg-white transition-all duration-300"></button>
+                <button class="carousel-indicator w-1.5 h-1.5 rounded-full bg-gray-500 hover:bg-gray-300 transition-all duration-300"></button>
+            </div>
+
+            <!-- Additional Overlay Info (Bottom Right) -->
+            <div class="absolute bottom-6 right-4 sm:right-8 z-20 flex items-center gap-3">
+                 <button class="w-8 h-8 rounded-full border border-gray-500 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-volume-xmark text-xs"></i></button>
+                 <span class="border border-gray-500 text-xs px-2 py-0.5 font-bold">13+</span>
+            </div>
+        </section>
+
+        <!-- Content Container -->
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            
+            <!-- Section: The Morning Brew with Coco and Mimi -->
+            <section class="mb-12">
+                <div class="flex items-center justify-between mb-5">
+                    <h2 class="text-xl font-bold tracking-wide">The Morning Brew with Coco and Mimi</h2>
+                    <a href="#" class="text-sm text-gray-400 hover:text-white flex items-center gap-1 transition-colors">
+                        See more <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Card 1 -->
+                    <div class="bg-adcCard rounded-xl overflow-hidden border border-adcBorder flex flex-col group cursor-pointer">
+                        <div class="relative aspect-video overflow-hidden">
+                            <img src="https://placehold.co/600x338/1a1a1a/ffffff?text=Morning+Brew+Thumbnail" alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute bottom-2 left-2 text-white font-bold text-lg drop-shadow-md">The Morning Brew (Sep 9 Edition)</div>
+                        </div>
+                        <div class="p-3 flex flex-col justify-between flex-grow">
+                            <div class="flex items-center text-[11px] font-medium text-gray-400 gap-3 mb-4">
+                                <span class="text-green-500">98% Match</span><span>1h 05m</span><span>13+</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-auto pt-3 border-t border-adcBorder/50">
+                                <div class="flex items-center gap-2">
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-plus text-xs"></i></button>
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-regular fa-thumbs-up text-xs"></i></button>
+                                </div>
+                                <span class="text-[11px] text-gray-400 truncate max-w-[100px]">Talk Show, Current Aff...</span>
+                                <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-chevron-down text-xs"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-adcCard rounded-xl overflow-hidden border border-adcBorder flex flex-col group cursor-pointer">
+                        <div class="relative aspect-video overflow-hidden">
+                            <img src="https://placehold.co/600x338/1a1a1a/ffffff?text=Morning+Brew+Thumbnail" alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute bottom-2 left-2 text-white font-bold text-lg drop-shadow-md">The Morning Brew (Sep 8 Edition)</div>
+                        </div>
+                        <div class="p-3 flex flex-col justify-between flex-grow">
+                            <div class="flex items-center text-[11px] font-medium text-gray-400 gap-3 mb-4">
+                                <span class="text-green-500">95% Match</span><span>58m</span><span>13+</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-auto pt-3 border-t border-adcBorder/50">
+                                <div class="flex items-center gap-2">
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-plus text-xs"></i></button>
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-regular fa-thumbs-up text-xs"></i></button>
+                                </div>
+                                <span class="text-[11px] text-gray-400 truncate max-w-[100px]">Talk Show, Investment</span>
+                                <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-chevron-down text-xs"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-adcCard rounded-xl overflow-hidden border border-adcBorder flex flex-col group cursor-pointer">
+                        <div class="relative aspect-video overflow-hidden">
+                            <img src="https://placehold.co/600x338/1a1a1a/ffffff?text=Morning+Brew+Thumbnail" alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute bottom-2 left-2 text-white font-bold text-lg drop-shadow-md">The Morning Brew (Sep 7 Edition)</div>
+                        </div>
+                        <div class="p-3 flex flex-col justify-between flex-grow">
+                            <div class="flex items-center text-[11px] font-medium text-gray-400 gap-3 mb-4">
+                                <span class="text-green-500">94% Match</span><span>1h 10m</span><span>13+</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-auto pt-3 border-t border-adcBorder/50">
+                                <div class="flex items-center gap-2">
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-plus text-xs"></i></button>
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-regular fa-thumbs-up text-xs"></i></button>
+                                </div>
+                                <span class="text-[11px] text-gray-400 truncate max-w-[100px]">Talk Show, Weekend W...</span>
+                                <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-chevron-down text-xs"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-adcCard rounded-xl overflow-hidden border border-adcBorder flex flex-col group cursor-pointer">
+                        <div class="relative aspect-video overflow-hidden">
+                            <img src="https://placehold.co/600x338/1a1a1a/ffffff?text=Morning+Brew+Thumbnail" alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute bottom-2 left-2 text-white font-bold text-lg drop-shadow-md">The Morning Brew (Sep 2 E...</div>
+                        </div>
+                        <div class="p-3 flex flex-col justify-between flex-grow">
+                            <div class="flex items-center text-[11px] font-medium text-gray-400 gap-3 mb-4">
+                                <span class="text-green-500">96% Match</span><span>1h 02m</span><span>13+</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-auto pt-3 border-t border-adcBorder/50">
+                                <div class="flex items-center gap-2">
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-plus text-xs"></i></button>
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-regular fa-thumbs-up text-xs"></i></button>
+                                </div>
+                                <span class="text-[11px] text-gray-400 truncate max-w-[100px]">Talk Show, Nollywood</span>
+                                <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-chevron-down text-xs"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Lifestyle with Coco -->
+            <section class="mb-12">
+                <div class="flex items-center justify-between mb-5">
+                    <h2 class="text-xl font-bold tracking-wide">Lifestyle with Coco</h2>
+                    <a href="#" class="text-sm text-gray-400 hover:text-white flex items-center gap-1 transition-colors">See more <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                </div>
+
+                <div class="relative">
+                    <button class="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 z-10 w-8 h-8 rounded-full bg-black/60 border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors hidden md:flex"><i class="fa-solid fa-chevron-left text-xs"></i></button>
+                    <button class="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 z-10 w-8 h-8 rounded-full bg-black/60 border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors hidden md:flex"><i class="fa-solid fa-chevron-right text-xs"></i></button>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <!-- Card 1 (Active/Playing) -->
+                        <div class="bg-adcCard rounded-xl overflow-hidden border border-adcBorder flex flex-col group relative cursor-pointer">
+                            <div class="relative aspect-video overflow-hidden">
+                                <img src="https://placehold.co/600x338/1a1a1a/ffffff?text=Lifestyle+with+Coco" alt="Video Thumbnail" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-300">
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="w-12 h-12 bg-white/90 rounded-full flex items-center justify-center text-black shadow-lg"><i class="fa-solid fa-play ml-1"></i></div>
+                                </div>
+                            </div>
+                            <div class="p-3 flex flex-col justify-between flex-grow">
+                                <div class="flex items-center text-[11px] font-medium text-gray-400 gap-3 mb-4">
+                                    <span class="text-green-500">93% Match</span><span>42m</span><span>13+</span>
+                                </div>
+                                <div class="absolute bottom-0 left-0 w-full p-3 bg-gradient-to-t from-adcCard to-transparent">
+                                    <span class="text-[11px] text-gray-400 truncate block">Lifestyle, Health, Texture</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="bg-adcCard rounded-xl overflow-hidden border border-adcBorder flex flex-col group cursor-pointer">
+                            <div class="relative aspect-video overflow-hidden">
+                                <img src="https://placehold.co/600x338/1a1a1a/ffffff?text=Lifestyle+with+Coco" alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <div class="p-3 flex flex-col justify-between flex-grow">
+                                <div class="flex items-center text-[11px] font-medium text-gray-400 gap-3 mb-4">
+                                    <span class="text-green-500">95% Match</span><span>45m</span><span>13+</span>
+                                </div>
+                                <div class="flex items-center justify-between mt-auto pt-3 border-t border-adcBorder/50">
+                                    <div class="flex items-center gap-2">
+                                        <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-plus text-xs"></i></button>
+                                        <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-regular fa-thumbs-up text-xs"></i></button>
+                                    </div>
+                                    <span class="text-[11px] text-gray-400 truncate max-w-[100px]">Lifestyle with Coco - Diaspora Fashi...</span>
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-chevron-down text-xs"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="bg-adcCard rounded-xl overflow-hidden border border-adcBorder flex flex-col group cursor-pointer">
+                            <div class="relative aspect-video overflow-hidden">
+                                <img src="https://placehold.co/600x338/1a1a1a/ffffff?text=Lifestyle+with+Coco" alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <div class="p-3 flex flex-col justify-between flex-grow">
+                                <div class="flex items-center text-[11px] font-medium text-gray-400 gap-3 mb-4">
+                                    <span class="text-green-500">96% Match</span><span>50m</span><span>13+</span>
+                                </div>
+                                <div class="flex items-center justify-between mt-auto pt-3 border-t border-adcBorder/50">
+                                    <div class="flex items-center gap-2">
+                                        <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-plus text-xs"></i></button>
+                                        <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-regular fa-thumbs-up text-xs"></i></button>
+                                    </div>
+                                    <span class="text-[11px] text-gray-400 truncate max-w-[100px]">Lifestyle with Coco — Luxury Living ...</span>
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-chevron-down text-xs"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="bg-adcCard rounded-xl overflow-hidden border border-adcBorder flex flex-col group relative cursor-pointer">
+                             <div class="relative aspect-video overflow-hidden">
+                                <img src="https://placehold.co/600x338/1a1a1a/ffffff?text=Morning+Brew" alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <div class="p-3 flex flex-col justify-between flex-grow">
+                                <div class="text-white font-bold text-lg leading-tight mb-2">The Morning Brew (...</div>
+                                <div class="flex items-center text-[11px] font-medium text-gray-400 gap-3 mb-4">
+                                    <span class="text-green-500">92% Match</span><span>59m</span><span>13+</span>
+                                </div>
+                                <div class="flex items-center justify-between mt-auto pt-3 border-t border-adcBorder/50">
+                                    <div class="flex items-center gap-2">
+                                        <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-plus text-xs"></i></button>
+                                        <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-regular fa-thumbs-up text-xs"></i></button>
+                                    </div>
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-chevron-down text-xs"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: ADC Specials & Documentaries -->
+            <section class="mb-12">
+                <div class="flex items-center justify-between mb-5">
+                    <h2 class="text-xl font-bold tracking-wide">ADC Specials & Documentaries</h2>
+                    <a href="#" class="text-sm text-gray-400 hover:text-white flex items-center gap-1 transition-colors">See more <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Card 1 -->
+                    <div class="bg-adcCard rounded-xl overflow-hidden border border-adcBorder flex flex-col group cursor-pointer">
+                        <div class="relative aspect-video overflow-hidden">
+                            <img src="https://placehold.co/600x338/1a1a1a/ffffff?text=Make+We+Yan" alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-3 flex flex-col justify-between flex-grow">
+                            <div class="text-white font-bold text-base leading-tight mb-2">Make We Yan — The Diaspora Townhall</div>
+                            <div class="flex items-center text-[11px] font-medium text-gray-400 gap-3 mb-4">
+                                <span class="text-green-500">99% Match</span><span>1h 12m</span><span>13+</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-auto pt-3 border-t border-adcBorder/50">
+                                <div class="flex items-center gap-2">
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-plus text-xs"></i></button>
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-regular fa-thumbs-up text-xs"></i></button>
+                                </div>
+                                <span class="text-[11px] text-gray-400 truncate max-w-[100px]">Talk Show, Townhall</span>
+                                <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-chevron-down text-xs"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-adcCard rounded-xl overflow-hidden border border-adcBorder flex flex-col group cursor-pointer">
+                        <div class="relative aspect-video overflow-hidden">
+                            <img src="https://placehold.co/600x338/1a1a1a/ffffff?text=Government+and+You" alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-3 flex flex-col justify-between flex-grow">
+                            <div class="text-white font-bold text-base leading-tight mb-2">The Government and You</div>
+                            <div class="flex items-center text-[11px] font-medium text-gray-400 gap-3 mb-4">
+                                <span class="text-green-500">96% Match</span><span>48m</span><span>13+</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-auto pt-3 border-t border-adcBorder/50">
+                                <div class="flex items-center gap-2">
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-plus text-xs"></i></button>
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-regular fa-thumbs-up text-xs"></i></button>
+                                </div>
+                                <span class="text-[11px] text-gray-400 truncate max-w-[100px]">Public Affairs, Civic Dia...</span>
+                                <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-chevron-down text-xs"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-adcCard rounded-xl overflow-hidden border border-adcBorder flex flex-col group cursor-pointer">
+                        <div class="relative aspect-video overflow-hidden">
+                            <img src="https://placehold.co/600x338/1a1a1a/ffffff?text=Morning+Brew+Aug+19" alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-3 flex flex-col justify-between flex-grow">
+                            <div class="text-white font-bold text-base leading-tight mb-2">The Morning Brew (Aug 19 Edition) ...</div>
+                            <div class="flex items-center text-[11px] font-medium text-gray-400 gap-3 mb-4">
+                                <span class="text-green-500">95% Match</span><span>1h 12m</span><span>13+</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-auto pt-3 border-t border-adcBorder/50">
+                                <div class="flex items-center gap-2">
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-plus text-xs"></i></button>
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-regular fa-thumbs-up text-xs"></i></button>
+                                </div>
+                                <span class="text-[11px] text-gray-400 truncate max-w-[100px]">Talk Show, Diaspora Re...</span>
+                                <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-chevron-down text-xs"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-adcCard rounded-xl overflow-hidden border border-adcBorder flex flex-col group cursor-pointer">
+                        <div class="relative aspect-video overflow-hidden">
+                            <img src="https://placehold.co/600x338/1a1a1a/ffffff?text=Lifestyle+with+Coco" alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-3 flex flex-col justify-between flex-grow">
+                            <div class="text-white font-bold text-base leading-tight mb-2">Lifestyle with Coco — Pan-...</div>
+                            <div class="flex items-center text-[11px] font-medium text-gray-400 gap-3 mb-4">
+                                <span class="text-green-500">97% Match</span><span>42m</span><span>13+</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-auto pt-3 border-t border-adcBorder/50">
+                                <div class="flex items-center gap-2">
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-plus text-xs"></i></button>
+                                    <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-regular fa-thumbs-up text-xs"></i></button>
+                                </div>
+                                <span class="text-[11px] text-gray-400 truncate max-w-[100px]">Culture, Fashion</span>
+                                <button class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors"><i class="fa-solid fa-chevron-down text-xs"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Back to Top Button Area -->
+    <div class="w-full bg-[#111] hover:bg-gray-900 transition-colors cursor-pointer border-y border-adcBorder">
+        <div class="max-w-[1400px] mx-auto px-4 py-4 text-center">
+            <span class="text-sm font-medium">Back to top</span>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-black pt-16 pb-8">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Footer Links Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 text-sm">
+                <!-- Column 1 -->
+                <div>
+                    <h4 class="font-bold mb-5 text-white">African Diaspora Channels</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Our Mission & Culture</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">ADC Originals</a></li>
+                    </ul>
+                </div>
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="font-bold mb-5 text-white">Partner with ADC</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Broadcast on ADC</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Submit Content</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Advertise with Us</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="font-bold mb-5 text-white">Watch Everywhere</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Live TV 24/7</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Supported Smart TVs</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Mobile & TV Apps</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="font-bold mb-5 text-white">Help & Support</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Broadcast Schedule</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer (Logo & Legal) -->
+            <div class="flex flex-col items-center border-t border-adcBorder pt-10">
+                <div class="flex flex-col items-center gap-2 mb-6">
+                    <!-- Footer Logo -->
+                    <img src="../img/logo.png" alt="ADC Logo" class="h-10 w-auto object-contain">
+                    <div class="flex flex-col text-[10px] leading-tight font-bold tracking-wider items-center">
+                        <span>AFRICAN</span>
+                        <span>DIASPORA</span>
+                        <span>CHANNELS</span>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 text-xs text-gray-400 mb-4">
+                    <a href="#" class="hover:text-white transition-colors">Conditions of Use</a>
+                    <a href="#" class="hover:text-white transition-colors">Privacy Notice</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+
+                <p class="text-xs text-gray-500 mt-2">
+                    &copy; 2026 African Diaspora Channels (ADC). All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JavaScript for Active Carousel -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+            let slideInterval;
+
+            function showSlide(index) {
+                // Reset all slides
+                slides.forEach((slide, i) => {
+                    if(i === index) {
+                        slide.classList.remove('opacity-0', 'z-0', 'pointer-events-none');
+                        slide.classList.add('opacity-100', 'z-10');
+                    } else {
+                        slide.classList.remove('opacity-100', 'z-10');
+                        slide.classList.add('opacity-0', 'z-0', 'pointer-events-none');
+                    }
+                });
+
+                // Reset all indicators
+                indicators.forEach((indicator, i) => {
+                    if(i === index) {
+                        indicator.classList.remove('w-1.5', 'bg-gray-500', 'hover:bg-gray-300');
+                        indicator.classList.add('w-6', 'bg-white');
+                    } else {
+                        indicator.classList.remove('w-6', 'bg-white');
+                        indicator.classList.add('w-1.5', 'bg-gray-500', 'hover:bg-gray-300');
+                    }
+                });
+
+                currentSlide = index;
+            }
+
+            function nextSlide() {
+                let next = (currentSlide + 1) % totalSlides;
+                showSlide(next);
+            }
+
+            function prevSlide() {
+                let prev = (currentSlide - 1 + totalSlides) % totalSlides;
+                showSlide(prev);
+            }
+
+            // Auto-play functionality
+            function startSlideShow() {
+                slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+            }
+
+            function stopSlideShow() {
+                clearInterval(slideInterval);
+            }
+
+            // Event Listeners
+            nextBtn.addEventListener('click', () => {
+                stopSlideShow();
+                nextSlide();
+                startSlideShow(); // Restart timer
+            });
+
+            prevBtn.addEventListener('click', () => {
+                stopSlideShow();
+                prevSlide();
+                startSlideShow(); // Restart timer
+            });
+
+            // Indicator clicks
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    stopSlideShow();
+                    showSlide(index);
+                    startSlideShow(); // Restart timer
+                });
+            });
+
+            // Pause on hover (optional but nice UX)
+            const carouselSection = document.getElementById('hero-carousel');
+            carouselSection.addEventListener('mouseenter', stopSlideShow);
+            carouselSection.addEventListener('mouseleave', startSlideShow);
+
+            // Initialize
+            showSlide(0);
+            startSlideShow();
+        });
+    </script>
+</body>
+</html>
