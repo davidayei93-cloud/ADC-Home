@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live TV - African Diaspora Channels</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.ico" type="image/png">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        adcRed: '#e11d48', 
+                        adcDark: '#0a0a0a', 
+                        adcCard: '#141414', 
+                        adcBorder: '#262626',
+                        adcBlue: '#113a61',     
+                        adcBlueHover: '#174d7e',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for the Live TV EPG section */
+        .custom-scrollbar::-webkit-scrollbar { height: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #1a1a1a; border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #555; }
+    </style>
+</head>
+<body class="bg-adcDark text-white font-sans antialiased min-h-screen flex flex-col overflow-x-hidden">
+
+    <!-- Top Navigation Bar -->
+    <header class="bg-black/80 backdrop-blur-md sticky top-0 z-50 border-b border-adcBorder">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+           <!-- Logo Area -->
+            <div class="flex items-center gap-3">
+                <img src="../img/logo.png" alt="African Diaspora Channels Logo" class="h-12 w-auto object-contain">
+                <div class="flex flex-col text-[11px] leading-tight font-bold tracking-wider">
+                    <span>AFRICAN</span>
+                    <span>DIASPORA</span>
+                    <span>CHANNELS</span>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <!-- Home links back to index.html -->
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                
+                <!-- Live TV is active on this page -->
+                <a href="live-tv.html" class="text-white relative pb-1 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-adcRed"></span> Live TV
+                    <span class="bg-adcRed text-white text-[10px] px-1.5 py-0.5 rounded font-bold ml-1">LIVE</span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-white"></span>
+                </a>
+                <a href="#" class="hover:text-white transition-colors">Movies</a>
+                <a href="#" class="hover:text-white transition-colors">TV shows</a>
+                <a href="#" class="hover:text-white transition-colors">Sports</a>
+            </nav>
+
+            <!-- Right Icons -->
+            <div class="flex items-center gap-5 text-gray-300">
+                <button class="hover:text-white transition-colors"><i class="fa-solid fa-magnifying-glass text-lg"></i></button>
+                <button class="relative hover:text-white transition-colors">
+                    <i class="fa-regular fa-bell text-lg"></i>
+                    <span class="absolute -top-1 -right-1 bg-adcRed text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">1</span>
+                </button>
+                <button class="hover:text-white transition-colors"><i class="fa-regular fa-user text-lg"></i></button>
+                <button class="hover:text-white transition-colors"><i class="fa-solid fa-gear text-lg"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow w-full mx-auto">
+        
+        <!-- LIVE TV EPG SECTION -->
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
+            
+            <!-- TOP FILTER BAR -->
+            <div class="flex items-center gap-3 mb-10 border-b border-gray-800 pb-4">
+                <button class="bg-white text-black font-semibold text-sm px-6 py-1.5 rounded-full hover:bg-gray-200 transition-colors">All</button>
+                <button class="bg-gray-800 text-gray-300 font-medium text-sm px-6 py-1.5 rounded-full hover:bg-gray-700 hover:text-white transition-colors">Nigeria</button>
+            </div>
+
+            <!-- SECTION HEADER -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center">
+                        <span class="w-3.5 h-3.5 rounded-full bg-red-600 shadow-[0_0_10px_rgba(220,38,38,0.8)] mr-3"></span>
+                        <h1 class="text-5xl font-black tracking-tighter text-white">LIVE</h1>
+                    </div>
+                    <p class="text-gray-400 text-sm md:mt-3 font-medium">Live Channels & Electronic Program Guide</p>
+                </div>
+                <div class="text-gray-500 text-xs tracking-wide">Scroll horizontally for all schedules &rarr;</div>
+            </div>
+
+            <!-- EPG CONTAINER -->
+            <div class="w-full overflow-x-auto custom-scrollbar pb-6">
+                <div class="min-w-[1200px] flex flex-col gap-2">
+
+                    <!-- ROW 1: CRBC -->
+                    <div class="flex gap-2 h-28">
+                        <div class="w-32 flex-shrink-0 bg-black border border-gray-800 rounded-lg flex items-center justify-center p-3">
+                            <img src="https://placehold.co/100x100/000000/ffffff?text=CRBC" alt="CRBC" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div class="w-[350px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col justify-between cursor-pointer border border-blue-900/50">
+                            <div class="flex items-center gap-1.5 text-xs font-semibold text-adcRed"><span class="w-1.5 h-1.5 rounded-full bg-adcRed"></span> 3 min left</div>
+                            <h3 class="text-base font-bold text-white leading-tight mb-2">Cross River Today: Live From Calabar</h3>
+                            <div class="w-full h-1 bg-gray-700 rounded-full mt-auto overflow-hidden"><div class="h-full bg-adcRed w-[85%]"></div></div>
+                        </div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col cursor-pointer border border-blue-900/50">
+                            <div class="text-xs font-bold text-gray-200 mb-2">9:30 PM</div>
+                            <h3 class="text-base font-semibold text-white leading-tight">Canaan City Live Edition</h3>
+                        </div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col cursor-pointer border border-blue-900/50">
+                            <div class="text-xs font-bold text-gray-200 mb-2">10:00 PM</div>
+                            <h3 class="text-base font-semibold text-white leading-tight">CRBC Nightly Network News</h3>
+                        </div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col cursor-pointer border border-blue-900/50">
+                            <div class="text-xs font-bold text-gray-200 mb-2">11:00 PM</div>
+                            <h3 class="text-base font-semibold text-white leading-tight">Calabar Carnival & Cultural Heritage</h3>
+                        </div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col cursor-pointer border border-blue-900/50">
+                            <div class="text-xs font-bold text-gray-200 mb-2">11:30 PM</div>
+                            <h3 class="text-base font-semibold text-white leading-tight">Obudu Lens: Highlands &...</h3>
+                        </div>
+                    </div>
+
+                    <!-- ROW 2: Channels TV -->
+                    <div class="flex gap-2 h-28">
+                        <div class="w-32 flex-shrink-0 bg-black border border-gray-800 rounded-lg flex items-center justify-center p-3">
+                            <img src="https://placehold.co/100x100/000000/ffffff?text=Channels" alt="Channels TV" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div class="w-[350px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col justify-between cursor-pointer border border-blue-900/50">
+                            <div class="flex items-center gap-1.5 text-xs font-semibold text-adcRed"><span class="w-1.5 h-1.5 rounded-full bg-adcRed"></span> 3 min left</div>
+                            <h3 class="text-base font-bold text-white leading-tight mb-2">Politics Today with Seun Ok...</h3>
+                            <div class="w-full h-1 bg-gray-700 rounded-full mt-auto overflow-hidden"><div class="h-full bg-adcRed w-[90%]"></div></div>
+                        </div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col cursor-pointer border border-blue-900/50">
+                            <div class="text-xs font-bold text-gray-200 mb-2">9:30 PM</div>
+                            <h3 class="text-base font-semibold text-white leading-tight">News Track Primetime Recap</h3>
+                        </div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col cursor-pointer border border-blue-900/50">
+                            <div class="text-xs font-bold text-gray-200 mb-2">10:00 PM</div>
+                            <h3 class="text-base font-semibold text-white leading-tight">The News at 10</h3>
+                        </div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col cursor-pointer border border-blue-900/50">
+                            <div class="text-xs font-bold text-gray-200 mb-2">11:00 PM</div>
+                            <h3 class="text-base font-semibold text-white leading-tight">Business Morning Digest</h3>
+                        </div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col cursor-pointer border border-blue-900/50">
+                            <div class="text-xs font-bold text-gray-200 mb-2">11:30 PM</div>
+                            <h3 class="text-base font-semibold text-white leading-tight">Hard Copy with Maupe Ogun-...</h3>
+                        </div>
+                    </div>
+
+                    <!-- ROW 3: Arise News -->
+                    <div class="flex gap-2 h-28">
+                        <div class="w-32 flex-shrink-0 bg-black border border-gray-800 rounded-lg flex items-center justify-center p-3">
+                            <img src="https://placehold.co/100x100/000000/ffffff?text=ARISE" alt="Arise News" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div class="w-[350px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col justify-between cursor-pointer border border-blue-900/50">
+                            <div class="flex items-center gap-1.5 text-xs font-semibold text-adcRed"><span class="w-1.5 h-1.5 rounded-full bg-adcRed"></span> 3 min left</div>
+                            <h3 class="text-base font-bold text-white leading-tight mb-2">The Morning Show Nightca...</h3>
+                            <div class="w-full h-1 bg-gray-700 rounded-full mt-auto overflow-hidden"><div class="h-full bg-adcRed w-[75%]"></div></div>
+                        </div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col cursor-pointer border border-blue-900/50">
+                            <div class="text-xs font-bold text-gray-200 mb-2">9:30 PM</div>
+                            <h3 class="text-base font-semibold text-white leading-tight">Prime Time News Bulletin</h3>
+                        </div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col cursor-pointer border border-blue-900/50">
+                            <div class="text-xs font-bold text-gray-200 mb-2">10:00 PM</div>
+                            <h3 class="text-base font-semibold text-white leading-tight">Arise News Night Tonight</h3>
+                        </div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col cursor-pointer border border-blue-900/50">
+                            <div class="text-xs font-bold text-gray-200 mb-2">11:00 PM</div>
+                            <h3 class="text-base font-semibold text-white leading-tight">The Global Business Report</h3>
+                        </div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue hover:bg-adcBlueHover transition-colors rounded-lg p-3 flex flex-col cursor-pointer border border-blue-900/50">
+                            <div class="text-xs font-bold text-gray-200 mb-2">11:30 PM</div>
+                            <h3 class="text-base font-semibold text-white leading-tight">Perspectives with Mairo-Ese</h3>
+                        </div>
+                    </div>
+                    
+                     <!-- ROW 4: Partial Example -->
+                     <div class="flex gap-2 h-28 opacity-50">
+                        <div class="w-32 flex-shrink-0 bg-black border border-gray-800 rounded-lg flex items-center justify-center p-3"></div>
+                        <div class="w-[350px] flex-shrink-0 bg-adcBlue rounded-lg p-3 flex flex-col border border-blue-900/50">
+                            <div class="flex items-center gap-1.5 text-xs font-semibold text-adcRed"><span class="w-1.5 h-1.5 rounded-full bg-adcRed"></span> 3 min left</div>
+                        </div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue rounded-lg p-3 flex flex-col border border-blue-900/50"><div class="text-xs font-bold text-gray-200 mb-2">9:30 PM</div></div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue rounded-lg p-3 flex flex-col border border-blue-900/50"><div class="text-xs font-bold text-gray-200 mb-2">10:00 PM</div></div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue rounded-lg p-3 flex flex-col border border-blue-900/50"><div class="text-xs font-bold text-gray-200 mb-2">11:00 PM</div></div>
+                        <div class="w-[300px] flex-shrink-0 bg-adcBlue rounded-lg p-3 flex flex-col border border-blue-900/50"><div class="text-xs font-bold text-gray-200 mb-2">11:30 PM</div></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-black pt-16 pb-8">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Footer Links Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 text-sm">
+                <!-- Column 1 -->
+                <div>
+                    <h4 class="font-bold mb-5 text-white">African Diaspora Channels</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Our Mission & Culture</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">ADC Originals</a></li>
+                    </ul>
+                </div>
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="font-bold mb-5 text-white">Partner with ADC</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Broadcast on ADC</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Submit Content</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Advertise with Us</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="font-bold mb-5 text-white">Watch Everywhere</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Live TV 24/7</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Supported Smart TVs</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Mobile & TV Apps</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="font-bold mb-5 text-white">Help & Support</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Broadcast Schedule</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer (Logo & Legal) -->
+            <div class="flex flex-col items-center border-t border-adcBorder pt-10">
+                <div class="flex flex-col items-center gap-2 mb-6">
+                    <img src="../img/logo.png" alt="ADC Logo" class="h-10 w-auto object-contain">
+                    <div class="flex flex-col text-[10px] leading-tight font-bold tracking-wider items-center">
+                        <span>AFRICAN</span>
+                        <span>DIASPORA</span>
+                        <span>CHANNELS</span>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 text-xs text-gray-400 mb-4">
+                    <a href="#" class="hover:text-white transition-colors">Conditions of Use</a>
+                    <a href="#" class="hover:text-white transition-colors">Privacy Notice</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+
+                <p class="text-xs text-gray-500 mt-2">
+                    &copy; 2026 African Diaspora Channels (ADC). All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
